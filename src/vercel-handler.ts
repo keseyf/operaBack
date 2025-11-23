@@ -1,6 +1,7 @@
-import app from "./server.js";
+// IMPORTA do dist
+import app from "./server.js"; // se o server.ts compilou para dist/server.js
 
 export default async function handler(req:any, res:any) {
-    await app.ready();  // inicializa o fastify
-    app.server.emit("request", req, res); // encaminha a request para o Fastify
+  await app.ready();           // garante que o Fastify esteja pronto
+  app.server.emit("request", req, res);
 }

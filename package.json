@@ -5,11 +5,10 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "npm run build && node dist/server.js",
-    "postinstall": "prisma generate",
-    "vercel-build": "npm run build && prisma migrate deploy"
-  },
+  "build": "tsc",
+  "postinstall": "prisma generate",
+  "vercel-build": "npm run build && prisma migrate deploy"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
