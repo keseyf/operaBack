@@ -6,6 +6,5 @@
 *
 * 🟢 You can import this file directly.
 */
-// This file is empty because there are no enums in the schema.
 export {};
 //# sourceMappingURL=enums.js.map
